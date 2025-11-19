@@ -1,0 +1,85 @@
+body {
+  font-family: "Prompt", sans-serif;
+  background: linear-gradient(135deg, #003459, #007f5f);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 24px;
+  width: 400px;
+  box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 6px;
+  color: #b9fbc0;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  color: #d8f3dc;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+
+.upload-area {
+  margin: 20px 0;
+}
+
+#preview {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: none;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+button {
+  background: linear-gradient(90deg, #00b4d8, #0096c7);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 1rem;
+}
+
+button:hover:not(:disabled) {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #0096c7, #00b4d8);
+}
+
+button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.prediction-item {
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 4px;
+  transition: width 0.6s ease;
+  background: linear-gradient(90deg, #48cae4, #80ed99);
+  box-shadow: 0 0 8px rgba(72, 202, 228, 0.5);
+}

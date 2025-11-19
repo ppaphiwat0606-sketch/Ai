@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎮 Game Classifier AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.10.0"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🎮 Game Classifier AI</h1>
+    <p class="subtitle">AI ทำนายว่าเป็นเกมอะไร: Fortnite, Minecraft, Terraria หรือ Roblox</p>
+
+    <div class="upload-area">
+      <input type="file" id="image-input" accept="image/*">
+      <img id="preview" src="" alt="Preview" />
+    </div>
+
+    <button id="predict-btn" disabled>ทำนายภาพ</button>
+
+    <div id="result" class="result">
+      <p>ผลการทำนาย:</p>
+      <div id="predictions"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
